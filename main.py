@@ -4,6 +4,10 @@ import smtplib
 from email.message import EmailMessage
 import os
 
+@app.route('/')
+def home():
+    return "IP report backend is running!"
+    
 app = Flask(__name__)
 CORS(app)  # Enable CORS so your frontend can call this API from any domain
 
